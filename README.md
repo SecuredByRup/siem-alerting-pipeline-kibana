@@ -32,7 +32,7 @@ Configured a reliable integration to handle security notifications securely thro
     ```
 
 #### 🛡️ Verification: SMTP Integration Status
-![SMTP Connector Configured](images/Screenshot_103.png)
+![SMTP Connector Configured](images/Screenshot%20(103).png)
 
 ---
 
@@ -46,7 +46,7 @@ Constructed an **Elasticsearch Query Rule** targeting system exceptions:
 * **Evaluation Interval:** Checked every `1 minute`.
 
 #### 🛡️ Verification: Rule Parameters & Log Compiling
-![Kibana Rule Query Parameters](images/Screenshot_111.png)
+![Kibana Rule Query Parameters](images/Screenshot%20(111).png)
 
 ---
 
@@ -56,14 +56,14 @@ To stress-test the pipeline, security event exceptions were generated directly o
 #### 🛡️ Verification: SIEM Rule Lifecycles (Active vs. Recovered)
 Once the threshold was breached, Kibana's rule console caught the spike, flagged the alert status as **Active**, and seamlessly shifted to **Recovered** once telemetry normalized.
 
-![Rule Firing History](images/Screenshot_113.png)
+![Rule Firing History](images/Screenshot%20(113).png)
 
 ---
 
 ## 🔍 Final Proof of Work: Automated SOC Notification
 The climax of the pipeline verification. Below is the live security email dispatched into the administrator's mailbox, parsed directly from the live telemetry payload variables via Mustache syntax:
 
-![Live Email Alert Received](images/Screenshot_116.png)
+![Live Email Alert Received](images/Screenshot%20(116).png)
 
 ---
 
